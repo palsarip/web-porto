@@ -1,0 +1,199 @@
+@font-face {
+    font-family: Kanit-SemiBold;
+    src: url(/fonts/Kanit-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Kanit-Regular;
+    src: url(/fonts/Kanit-Regular.ttf);
+}
+
+body {
+    background-color: #111111;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.center {
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    color: white;
+    font-family: Kanit-SemiBold;
+    text-decoration: none;
+    margin-top: 4.5vh;
+}
+
+.menu-icon {
+    width: 25px;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 20px;
+    display: none;
+    color: white;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    background: color rgb(115, 211, 255);
+    margin-top: 4.5vh;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Kanit-Semibold;
+    margin-left: 25px;
+}
+
+nav ul li a:hover {
+    border-bottom: #ffffff solid 2px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.home-page {
+    display: flex;
+}
+
+.home-page h1 {
+    position: relative;
+    width: 70%;
+    font-size: 60px;
+    color: white;
+    font-family: Kanit-SemiBold;
+    text-decoration: none;
+    margin-top: 10vh;
+    font-weight: lighter;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.home-page p {
+    width: 80%;
+    height: auto;
+    font-size: 22px;
+    color: #ffffff;
+    font-family: Kanit-regular;
+    font-weight: lighter;
+    text-decoration: none;
+    margin-top: 5vh;
+    line-height: 1.1;
+}
+
+.languages ul {
+    padding-top: 20px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 10px));
+}
+
+.languages ul li::before {
+    content: "\2023";
+    color: #ffc63f;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.languages ul li {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Kanit-Semibold;
+    margin-left: 25px;
+}
+
+img {
+    width: 50vh;
+    height: 50vh;
+    margin-top: 10vh;
+    object-fit: contain;
+    border-radius: 30px;
+    box-shadow: #ffc63f 20px 15px 10px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-top: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #ffc63f;
+    color: #000000;
+    font-size: 15px;
+    font-family: Kanit-SemiBold;
+}
+
+@media only screen and (max-width: 1000px) {
+    .home-image {
+        height: 30vh;
+    }
+    img {
+        width: 30vh;
+        height: 30vh;
+        margin-top: 25vh;
+        object-fit: contain;
+        border-radius: 30px;
+        box-shadow: #ffc63f 20px 15px 10px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    img {
+        display: none;
+    }
+    .button-space {
+        width: 100%;
+    }
+    .home-page h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 50px;
+    }
+    .home-page p {
+        width: 100%;
+        text-align: left;
+        font-size: 18px;
+    }
+    .languages {
+        width: 100%;
+    }
+    .languages ul {
+        padding-top: 20px;
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(150px, 10px));
+        margin: auto;
+        padding: auto;
+    }
+}
