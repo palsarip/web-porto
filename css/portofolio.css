@@ -10,6 +10,18 @@
 
 body {
     background-color: #111111;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 * {
@@ -124,11 +136,6 @@ nav ul li a:hover {
 }
 
 .project .links {
-    font-size: 25px;
-    margin-bottom: 1em;
-}
-
-.project .links:hover {
     font-size: 25px;
     margin-bottom: 1em;
 }
